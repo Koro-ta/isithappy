@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    font-family: 'Patrick Hand';
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-top: 10px; v
+}
+body {
+    background-color: #caf0f8;
+}
+#button-dm {
+    position:absolute; top:0; right:0;
+}
+
+#center {
+    text-align: center;
+}
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+.search-container {
+    max-width: 600px;
+    margin: 50px auto;
+}
+.search-container form {
+    position: relative;
+}
+.search-container form button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 50px;
+    background: transparent;
+    border: transparent;
+    font-size: 20px;
+    color: #4b00ff;
+    cursor: pointer;
+    outline: 0;
+}
+input[type="text"] {
+    display: block;
+    border-radius: 0px;
+    width: calc(100% - 24px); /*20px [ left & Right ] padding + 4px border [ left & Right ] */
+    font-size: 18px;
+    font-weight: 600;
+    color: #4b00ff;
+    padding: 10px;
+    border: 2px solid #4b00ff;
+}
