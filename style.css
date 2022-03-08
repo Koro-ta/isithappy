@@ -19,12 +19,12 @@ h1 {
 
 /* ---------------------------- Body & Dark Mode */
 body {
-    background-color: #d6e2e9;
-    color: black;
+    background-color: #f1faee;
+    color: #000000;
 }
   .dark-mode {
-    background-color: black;
-    color: white;
+    background-color: #000000;
+    color: #ffffff;
 }
 @media (prefers-color-scheme: dark) {
   body {
@@ -32,18 +32,17 @@ body {
     color: #ffffff;
   }
   .dark-mode {
-    background-color: #ffffff;
+    background-color: #f1faee;
     color: #000000;
   }
 }
-
-
-/* ---------------------------- IDs and Classes */
 #center {
     text-align: center;
 }
+
+/* ---------------------------- Navigation Bar */
 .topnav {
-    background-color: #fde2e4;
+    background-color: #fec5bb;
     overflow: hidden;
     padding: 0px 9px;
 }
@@ -74,7 +73,7 @@ body {
     background: transparent;
     border: transparent;
     font-size: 20px;
-    color: #ffc222;
+    color: #f28482;
     cursor: pointer;
     outline: 0;
 }
@@ -86,5 +85,5 @@ input[type="text"] {
     font-weight: 400;
     color: #232D39;
     padding: 10px;
-    border: 2px solid #ffc222;
+    border: 2px solid #f28482;
 }
