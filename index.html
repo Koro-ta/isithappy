@@ -22,11 +22,11 @@
   &nbsp;
   <div class="reportPopup">
     <div class="formPopup" id="popupForm">
-      <form action="/action_page.php" class="formContainer">
+      <form action="/reportIssue.php" class="formContainer">
         <h2 id=container>Report an Issue</h2>
-        <input type="text" placeholder="Your name (required)" required>
-        <input type="text" id="email" placeholder="Your email" name="email">
-        <textarea rows="4" placeholder="Write here..."></textarea>
+        <input name="vname" type="text" placeholder="Your name (required)" required>
+        <input name="vemail" type="text" id="email" placeholder="Your email" name="email">
+        <textarea name="msg" rows="4" placeholder="Write here..."></textarea>
         <button type="submit" class="btn">Submit</button>
         <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
       </form>
@@ -38,9 +38,10 @@
     <h1>Your K-Drama Mood Search</h1>
     <p>Is it a happy ending? Check here to see if that show you've been eyeing is a happy ever after or ending in tragedy.<p>
       &nbsp
-    <p><mark>FRIENDLY REMINDER:</mark> Just knowing if an ending is happy or sad can be a spoiler too, so search at your discretion!</p>
+    <div margin=5px><p><pre><mark> DISCLAIMER: Just knowing if an ending is happy or sad can be a spoiler too, so search at your discretion! </mark></pre></p>
+    </div>
   </div>
-  <!-- TO-DO: Link search bar to MyDramaList API and maybe draw from CSS in https://pagedart.com/blog/how-to-add-a-search-bar-in-html/ -->
+  <!-- TO-DO: Link search bar to MyDramaList API -->
   <div class="search-container">
       <form action="">
         <input type="text" placeholder="Search..." name="search">
