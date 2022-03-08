@@ -19,7 +19,7 @@ h1 {
 
 /* ---------------------------- Body & Dark Mode */
 body {
-    background-color: #f1faee;
+    background-color: #f8edeb;
     color: #000000;
 }
   .dark-mode {
@@ -32,13 +32,18 @@ body {
     color: #ffffff;
   }
   .dark-mode {
-    background-color: #f1faee;
+    background-color: #f8edeb;
     color: #000000;
   }
 }
-#center {
+.center {
     text-align: center;
 }
+#container {
+    color: #ffffff;
+    margin-bottom: 18px;
+}
+
 
 /* ---------------------------- Navigation Bar */
 .topnav {
@@ -86,4 +91,61 @@ input[type="text"] {
     color: #232D39;
     padding: 10px;
     border: 2px solid #f28482;
+}
+
+
+/* ---------------------------- Report an Issue */
+.reportPopup {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.formPopup {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%, 0%);
+  border: 2px solid #adb5bd;
+  z-index: 9;
+}
+.formContainer {
+  width: 300px;
+  padding: 20px;
+  background-color: #111827;
+}
+.formContainer input[type=text] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 20px 0;
+  border: none;
+  background: #eeeeee;
+}
+.formContainer input[type=text]:focus {
+  background-color: #dddddd;
+  outline: none;
+}
+.formContainer .btn {
+  padding: 12px 20px;
+  border: none;
+  background-color: #8ebf42;
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 15px;
+  opacity: 0.8;
+}
+.formContainer .cancel {
+  background-color: #adb5bd;
+}
+.formContainer .btn:hover,
+.openButton:hover {
+  opacity: 1;
+}
+textarea {
+  width: 90%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
 }
